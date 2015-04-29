@@ -1,0 +1,12 @@
+<template name="programView">
+  <h2>{{name}}</h2>
+  <p><strong>Start time: </strong>{{start_time}}</p>
+  <p><strong>Leadtext: </strong>{{leadtext}}</p>
+  <p><strong>Date: </strong>{{showDateTime date}}</p>
+  <p><strong>B-line: </strong>{{bline}}</p>
+  <p><strong>Synopsis: </strong>{{synopsis}}</p>
+  <p><strong>URL: </strong>{{url}}</p>
+  <p><strong>Updated: </strong>{{showTimeAgo updated}}</p>
+  <p><created>Created: </created>{{showLongDate created}}</p>
+  <p><a class="btn btn-primary btn-default" href="{{pathFor 'programsIndex'}}" role="button">Back</a></p>
+</template>

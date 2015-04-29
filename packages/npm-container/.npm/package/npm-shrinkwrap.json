@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "xmlbuilder": {
+      "version": "2.6.2",
+      "dependencies": {
+        "lodash": {
+          "version": "3.5.0"
+        }
+      }
+    }
+  }
+}

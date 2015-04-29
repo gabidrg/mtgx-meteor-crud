@@ -1,0 +1,44 @@
+<!-- This is a static page. Template mapping is defined in client/routes/pages.js -->
+
+<template name="home">
+  <div class="container">
+    <h1>MTGx CRUD Meteor</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Requirements</h2>
+        <p>
+        Your task is to create an input form that will save
+        entered data into a database.
+
+        Through a simple interface, you should then be able to list the information in
+        tabular, but also to have it presented as an XML file in the format
+        below. This means that the form must be able to take this data is
+        defined in the xml sample as input into individual fields.
+
+        It should also be possible to delete rows from the table via
+        interface. The system must have support for an infinite number of rows
+        information.
+        </p>
+
+        <ul>
+          <li>There are no requirements for a functional design, but it is a system that works according to the above requirements with a simple navigation bar spirit and the creation of new content.</li>
+          <li>The XML generated is well-formed and do not contain any validation errors.</li>
+          <li>The code must contain comments.</li>
+          <li>If you use a framework, be sure not to automatically generate CRUD.</li>
+        </ul>
+
+      </div>
+      <div class="col-md-6">
+        <h2>Installation</h2>
+        <div class="well well-sm">
+          <ol>
+            <li><code>curl https://install.meteor.com/ | sh</code></li>
+            <li><code>git clone https://github.com/gabidrg</code></li>
+            <li><code>cd mtgx-crud-meteor</code></li>
+            <li><code>meteor</code></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

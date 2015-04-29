@@ -1,0 +1,16 @@
+<template name="programUpdate">
+  <h2>Update program</h2>
+  {{#autoForm collection="Programs" doc=this id="programForm" type="update"}}
+  <fieldset>
+    {{> afQuickField name='date'}}
+    {{> afQuickField name='start_time'}}
+    {{> afQuickField name='leadtext' rows=6}}
+    {{> afQuickField name='name'}}
+    {{> afQuickField name='bline'}}
+    {{> afQuickField name='synopsis' rows=6}}
+    {{> afQuickField name='url'}}
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Update</button>
+  <a class="btn btn-link" role="button" href="{{pathFor 'programsIndex'}}">Back</a>
+  {{/autoForm}}
+</template>

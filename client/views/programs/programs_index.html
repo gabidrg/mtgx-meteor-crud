@@ -1,0 +1,49 @@
+<!--
+Index page for programs. Programs are already loaded at render time and binded
+to data parameter of the route programsIndex. A simple iteration renders programs, if any.
+See routes/programs.js
+-->
+
+<template name="programsIndex">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Programs</h1>
+      <a class="btn btn-primary" href="{{pathFor 'programCreate'}}" role="button">Add program</a>
+      <a class="btn btn-primary" href="/export/xml" role="button">Export XML</a>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Start time</th>
+            <th>Leadtext</th>
+            <th>Date</th>
+            <th>B-line</th>
+            <th>Synopsis</th>
+            <th>URL</th>
+            <th>OPS</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each programs}}
+          <tr>
+            <td><a href="{{pathFor 'programView'}}">{{name}}</a></td>
+            <td>{{start_time}}</td>
+            <td>{{leadtext}}</td>
+            <td>{{date}}</td>
+            <td>{{bline}}</td>
+            <td>{{synopsis}}</td>
+            <td>{{url}}</td>
+            <td>
+              <a class="btn btn-xs btn-default" href="{{pathFor 'programUpdate'}}" role="button">Edit</a>
+              <a class="btn btn-xs btn-danger delete-program" href="#" role="button">Delete</a>
+            </td>
+          </tr>
+          {{else}}
+          No programs added.
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>
